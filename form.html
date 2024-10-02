@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Form to join Photography Club MITAOE</h1>
+    <form action="/submit" method="post">
+        <div>
+            <label for="urname">Enter Your Name:</label>
+            <input type="text" id="urname" name="urname" placeholder="Enter your name" required>
+        </div>
+        <br>
+        <div>
+            Gender:
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <br>
+        <div>
+            <label for="prn">Enter Your PRN:</label>
+            <textarea name="prn" id="prn" cols="12" rows="1" placeholder="Enter your PRN" required></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="dob">Enter your DOB:</label>
+            <input type="date" id="dob">
+        </div>
+        <br>
+        <div>
+            <label for="password">Enter your password:</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <br>
+        <div>
+            Which App you use for editing?
+            <br>
+            <input type="checkbox" id="app1" name="pixels" value="pixels">
+            <label for="app1">Pixels</label>
+            <input type="checkbox" id="app2" name="lightroom" value="lightroom">
+            <label for="app2">Lightroom</label>
+            <input type="checkbox" id="app3" name="adobe" value="adobe">
+            <label for="app3">Adobe</label>
+        </div>
+        <br>
+        <div>
+            <label for="email">Enter your email id:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+        <br>
+        <div>
+            <label for="no">Enter your phone no:</label>
+            <input type="number" id="no" placeholder="Enter your no.">
+        </div>
+        <br>
+        <div>
+            <label for="reason">Why do you wanna join this club?</label>
+            <br>
+            <textarea name="reason" id="reason" cols="30" rows="5"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="opt">How do you got to know about this club</label>
+            <select name="opt" id="opt" required>
+                <option value="select">Select</option>
+                <option value="seniors">Seniors</option>
+                <option value="friends">Friends</option>
+                <option value="social media">Social Media</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="reset">
+            <input type="submit">
+        </div>
+    </form>
+</body>
+
+</html>
